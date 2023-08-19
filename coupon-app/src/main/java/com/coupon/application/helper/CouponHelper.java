@@ -8,5 +8,7 @@ import java.util.UUID;
 public class CouponHelper {
     public String newCoupon(){
         return UUID.randomUUID().toString();
+
     }
 }
+
