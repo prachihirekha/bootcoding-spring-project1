@@ -17,5 +17,5 @@ public class Patient {
     private String lastName;
     private String disease;
     private long phone;
-    //private Date date;
+    private Date date;
 }
