@@ -1,0 +1,13 @@
+package com.coupon.application.util;
+
+import java.util.Random;
+
+public class GenerateCreateBy {
+    public static  String createBy(){
+        String [] arr ={"Amazon","Zomato","GPay","phonePay","Swiggy","IndiaMart"};
+        Random random =new Random();
+        int index = random.nextInt(arr.length);
+        return arr[index];
+
+    }
+}
