@@ -15,7 +15,7 @@ public class InvoicePatientController {
     @Autowired
     private PatientService patientService;
     @PostMapping("/patient")
-    public String registor(@RequestBody InvoiceModePatient patient){
+    public String registor(@RequestBody Patient patient){
         // System.out.println(patient);
         patientService.singlePatient(patient);
         return "Success";

@@ -54,9 +54,16 @@ public class CouponService {
     public List<Coupon> insertCoupon(int size){
         List<Coupon> list =new ArrayList<>();
         for (int i =0;i<size;i++){
-            Coupon coupon=Coupon.builder().title(GenerateTitle.couponName()).category(GenerateCategory.category()).coupon_code(GenerateCouponCode.generateCode())
-                    .category(GenerateCreateBy.createBy()).description(GenerateDescription.description()).discount(GenerateDiscount.discount())
-                    .is_active(GenerateIsActive.isActive()).type(GenerateCouponType.couponType()).status(GenerateStatus.generateStatus())
+            Coupon coupon=Coupon.builder().title(GenerateTitle.couponName())
+                    .category(GenerateCategory.category())
+                    .coupon_code(GenerateCouponCode.generateCode())
+                    .create_by(GenerateCreateBy.createBy())
+                    .description(GenerateDescription.description())
+                    .discount(GenerateDiscount.discount())
+                    .is_active(GenerateIsActive.isActive())
+                    .type(GenerateCouponType.couponType()).validFor(GenerateValidityFor.generateValidity())
+                    .status(GenerateStatus.generateStatus())
+                    .create_date(GenerateDate.date())
                     .build();
             list.add(coupon);
         }

@@ -16,8 +16,8 @@ public class Coupon {
     private int id;
     @Column(name ="coupon_Type")
     private String type;
-    @Column(name ="valid_date")
-    private int validFor;
+    @Column(name ="valid_day")
+    private String validFor;
     @Column(name="title")
     private String title;
     private String coupon_code;

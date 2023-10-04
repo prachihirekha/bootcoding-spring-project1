@@ -8,6 +8,7 @@ import java.util.Date;
 @Data
 @Builder
 public class InvoiceModePatient {
+    private int id ;
     private double bill;
     private  String disease;
     private String name;

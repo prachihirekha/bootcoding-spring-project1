@@ -10,6 +10,7 @@ public class GenerateDate {
         Date yesterday = new Date(now - aDay);
         Date aYearAgo = new Date(now - aDay * 365);
 
-        return date();
+        return yesterday;
     }
+
 }
